@@ -19,3 +19,11 @@ When citing **IADICO** in academic papers and theses, please use the following B
   address = {Khon Kaen, Thailand.}
   }
 ```
+
+# Manual Download from Internet Archive
+
+To download the Astronomy corpus for instance, run the following command:
+
+wget -r -H -nc -np -nH --cut-dirs=1 -A .txt -e robots=off -l1 -i ../astronomy.txt -B 'http://archive.org/download/'
+
+You can find the astronomy.txt list of document identifiers in the ./data/ids/astronomy.txt 
